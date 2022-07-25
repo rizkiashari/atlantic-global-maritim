@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <>
       <Header />
-      Services
+      <div className='px-2 py-2 sm:px-4'>Services</div>
     </>
   )
 }

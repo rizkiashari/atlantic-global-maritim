@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <>
       <Header />
-      ContactUs
+      <div className='px-2 py-2 sm:px-4'>Contact Us</div>
     </>
   )
 }
