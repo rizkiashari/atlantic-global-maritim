@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../assets/images/logo.png'
 import FlagEN from '../assets/icon/EN.png'
 import FlagID from '../assets/icon/ID.png'
@@ -7,6 +7,17 @@ import { useLocation } from 'react-router-dom'
 
 const Header = () => {
   const currentRoute = useLocation().pathname
+  const [language, setLanguage] = useState(localStorage.getItem('lang'))
+
+  useEffect(() => {
+    if (language === null) {
+      setLanguage('en')
+    } else {
+      setLanguage(localStorage.getItem('lang'))
+    }
+  }, [language])
+
+  console.log(language)
 
   return (
     <div className='py-4'>
@@ -19,18 +30,26 @@ const Header = () => {
             label={
               <p className='flex gap-3 items-center font-poppins text-primary'>
                 <img src={FlagEN} alt='flag-en' className='w-7 h-5' />
-                EN
+                {language === 'en' ? 'EN' : 'ID'}
               </p>
             }
             color='white'
           >
-            <Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => {
+                setLanguage(localStorage.setItem('lang', 'en'))
+              }}
+            >
               <p className='flex gap-3 items-center font-poppins text-primary'>
                 <img src={FlagEN} alt='flag-en' className='w-7 h-5' />
                 EN
               </p>
             </Dropdown.Item>
-            <Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => {
+                setLanguage(localStorage.setItem('lang', 'id'))
+              }}
+            >
               <p className='flex gap-3 items-center font-poppins text-primary'>
                 <img src={FlagID} alt='flag-en' className='w-7 h-5' />
                 ID
