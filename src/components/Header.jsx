@@ -20,7 +20,7 @@ const Header = () => {
   console.log(language)
 
   return (
-    <div className='py-4'>
+    <div className='py-4 container'>
       <Navbar fluid={true} rounded={true}>
         <Navbar.Brand href='/'>
           <img src={Logo} alt='logo' className='w-52' />
@@ -29,7 +29,11 @@ const Header = () => {
           <Dropdown
             label={
               <p className='flex gap-3 items-center font-poppins text-primary'>
-                <img src={FlagEN} alt='flag-en' className='w-7 h-5' />
+                <img
+                  src={language === 'en' ? FlagEN : FlagID}
+                  alt='flag-en'
+                  className={`${language === 'en' ? 'w-7 h-5' : 'w-8 h-5'}`}
+                />
                 {language === 'en' ? 'EN' : 'ID'}
               </p>
             }

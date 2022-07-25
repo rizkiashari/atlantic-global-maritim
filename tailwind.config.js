@@ -16,6 +16,13 @@ module.exports = {
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
         caveat: ['Caveat', ...defaultTheme.fontFamily.sans],
       },
+      screens: {
+        sm: '640px',
+        md: '850px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [require('flowbite/plugin')],

@@ -4,11 +4,15 @@
 
 /* Untuk mereset class yang diberikan oleh tailwind */
 @layer base {
-  .container {
-    @apply max-w-[1400px] m-auto px-4;
-  }
 }
 
 /* Components  Membuat components yang dapat digunakan*/
+@layer components {
+  .container {
+    @apply max-w-[1600px] m-auto px-4;
+  }
+}
 
 /* utilities yang diutamakan dijalankan */
+@layer utilities {
+}
