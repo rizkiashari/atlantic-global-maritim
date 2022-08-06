@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Logo from '../assets/images/logo.png'
-import FlagEN from '../assets/icon/EN.png'
-import FlagID from '../assets/icon/ID.png'
+import Logo from '../assets/images/logo.webp'
+import FlagEN from '../assets/icon/EN.webp'
+import FlagID from '../assets/icon/ID.webp'
 import { Dropdown, Navbar } from 'flowbite-react'
 import { useLocation } from 'react-router-dom'
 

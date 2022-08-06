@@ -13,6 +13,7 @@ const Home = () => {
   return (
     <>
       <Header />
+      <div className='bg'></div>
       <div className='px-2 py-2 5 sm:px-4 container'>Home</div>
     </>
   )
