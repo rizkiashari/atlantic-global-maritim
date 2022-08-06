@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Logo from '../assets/images/logo.webp'
 import FlagEN from '../assets/icon/EN.webp'
 import FlagID from '../assets/icon/ID.webp'
@@ -8,16 +8,6 @@ import { useLocation } from 'react-router-dom'
 const Header = () => {
   const currentRoute = useLocation().pathname
   const [language, setLanguage] = useState(localStorage.getItem('lang'))
-
-  useEffect(() => {
-    if (language === null) {
-      setLanguage('en')
-    } else {
-      setLanguage(localStorage.getItem('lang'))
-    }
-  }, [language])
-
-  console.log(language)
 
   return (
     <div className='py-4 container'>
@@ -42,6 +32,7 @@ const Header = () => {
             <Dropdown.Item
               onClick={() => {
                 setLanguage(localStorage.setItem('lang', 'en'))
+                window.location.reload()
               }}
             >
               <p className='flex gap-3 items-center font-poppins text-primary'>
@@ -52,6 +43,7 @@ const Header = () => {
             <Dropdown.Item
               onClick={() => {
                 setLanguage(localStorage.setItem('lang', 'id'))
+                window.location.reload()
               }}
             >
               <p className='flex gap-3 items-center font-poppins text-primary'>
