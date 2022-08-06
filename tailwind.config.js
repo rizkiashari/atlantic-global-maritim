@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         'nav-inActive': '#707070',
         primary: '#00008B',
+        black: {
+          800: '#2c2c2c',
+        },
       },
       fontFamily: {
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],

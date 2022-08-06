@@ -9,10 +9,30 @@
 /* Components  Membuat components yang dapat digunakan*/
 @layer components {
   .container {
-    @apply max-w-[1600px] m-auto px-4;
+    @apply max-w-[1600px] m-auto md:px-0 sm:px-0 px-4 overflow-x-hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .paragraf {
+    @apply text-nav-inActive text-sm md:text-2xl max-w-3xl w-full;
+  }
+
+  .head-text {
+    @apply font-caveat text-base md:text-xl lg:text-3xl 2xl:text-4xl text-black-800;
+  }
+
+  .heading {
+    @apply font-medium text-base  md:text-2xl lg:text-4xl 2xl:text-5xl md:mt-6 my-3 md:mb-8 max-w-xl w-full leading-normal;
   }
 }
 
 /* utilities yang diutamakan dijalankan */
 @layer utilities {
+}
+
+.hero {
+  @apply bg-cover bg-no-repeat bg-center;
+  background-image: url('/src/assets/images/home/home-head.webp');
+  max-height: 100%;
+  min-height: 70vh;
 }
