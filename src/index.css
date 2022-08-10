@@ -9,7 +9,7 @@
 /* Components  Membuat components yang dapat digunakan*/
 @layer components {
   .container {
-    @apply max-w-[1600px] m-auto md:px-0 sm:px-0 px-4 overflow-x-hidden w-full;
+    @apply max-w-[1600px] m-auto md:px-0 px-4 overflow-x-hidden w-full;
     transition: all 0.3s ease-in-out;
   }
 
@@ -32,9 +32,16 @@
 
 .hero {
   @apply bg-cover bg-no-repeat bg-center;
-  background-image: url('/src/assets/images/home/home-head.webp');
   max-height: 100%;
   min-height: 70vh;
+}
+
+.hero-home {
+  background-image: url('/src/assets/images/home/home-head.webp');
+}
+
+.hero-services {
+  background-image: url('/src/assets/images/service/hero-service.webp');
 }
 
 .contact-us {
