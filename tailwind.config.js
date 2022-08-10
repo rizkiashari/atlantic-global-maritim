@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'nav-inActive': '#707070',
         primary: '#00008B',
+        secondary: '#707070',
         black: {
           800: '#2c2c2c',
         },

@@ -60,7 +60,7 @@ const Header = () => {
               className={`${
                 currentRoute === '/'
                   ? 'text-primary border-b-2 border-primary'
-                  : 'text-nav-inActive'
+                  : 'text-secondary'
               } font-poppins pb-2`}
             >
               Home
@@ -71,7 +71,7 @@ const Header = () => {
               className={`${
                 currentRoute === '/about-us'
                   ? 'text-primary border-b-2 border-primary'
-                  : 'text-nav-inActive'
+                  : 'text-secondary'
               } font-poppins pb-2`}
             >
               About Us
@@ -82,7 +82,7 @@ const Header = () => {
               className={`${
                 currentRoute === '/visi-misi'
                   ? 'text-primary border-b-2 border-primary'
-                  : 'text-nav-inActive'
+                  : 'text-secondary'
               } font-poppins pb-2`}
             >
               Visi & Mission
@@ -93,21 +93,10 @@ const Header = () => {
               className={`${
                 currentRoute === '/services'
                   ? 'text-primary border-b-2 border-primary'
-                  : 'text-nav-inActive'
+                  : 'text-secondary'
               } font-poppins pb-2`}
             >
               Services
-            </p>
-          </Navbar.Link>
-          <Navbar.Link href='/facilities'>
-            <p
-              className={`${
-                currentRoute === '/facilities'
-                  ? 'text-primary border-b-2 border-primary'
-                  : 'text-nav-inActive'
-              } font-poppins pb-2`}
-            >
-              Facilities
             </p>
           </Navbar.Link>
           <Navbar.Link href='/contact-us'>
@@ -115,7 +104,7 @@ const Header = () => {
               className={`${
                 currentRoute === '/contact-us'
                   ? 'text-primary border-b-2 border-primary'
-                  : 'text-nav-inActive'
+                  : 'text-secondary'
               } font-poppins pb-2`}
             >
               Contact Us
