@@ -4,9 +4,9 @@ import GmailIcon from '../assets/icon/gmail-icon.webp'
 import LinkedLncon from '../assets/icon/linkedln-icon.webp'
 import WaIcon from '../assets/icon/wa-icon.webp'
 
-const ContactUs = () => {
+const EmailContact = () => {
   return (
-    <div className='contact-us mb-8 py-5'>
+    <div className='contact-us py-5'>
       <div className='flex gap-6 w-full flex-wrap md:flex-nowrap'>
         <div className='md:w-1/2 w-full'>
           <div className='bg-white mb-4 md:pl-40 pl-4 pr-4 rounded-tr-md rounded-br-md pt-10 pb-12'>
@@ -117,4 +117,4 @@ const ContactUs = () => {
   )
 }
 
-export default ContactUs
+export default EmailContact

@@ -44,6 +44,14 @@
   background-image: url('/src/assets/images/service/hero-service.webp');
 }
 
+.hero-contactus {
+  background-image: url('/src/assets/images/contact-us/contactus-hero.webp');
+}
+
+.hero-facilities {
+  background-image: url('/src/assets/images/facilities/facilities-hero.webp');
+}
+
 .contact-us {
   @apply bg-cover bg-no-repeat bg-center;
   background-image: url('/src/assets/images/home/contact-us.webp');

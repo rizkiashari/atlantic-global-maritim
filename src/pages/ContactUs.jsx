@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header'
+import EmailContact from '../components/EmailContact'
+import Footer from '../components/Footer'
 
 const ContactUs = () => {
   const lang = localStorage.getItem('lang')
@@ -13,7 +15,16 @@ const ContactUs = () => {
   return (
     <>
       <Header />
-      <div className='px-2 py-2 sm:px-4 container'>Contact Us</div>
+      <div className='hero hero-contactus flex justify-center'>
+        <div className='container'>
+          <h3 className='text-white text-base md:text-2xl lg:text-3xl xl:text-5xl font-semibold'>
+            Contact Us
+          </h3>
+        </div>
+      </div>
+      <EmailContact />
+      <p>Google Map Here</p>
+      <Footer />
     </>
   )
 }

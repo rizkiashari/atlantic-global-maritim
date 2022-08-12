@@ -6,7 +6,7 @@ import HeadThree from '../assets/images/home/head-3.webp'
 import HeadAbout from '../assets/images/home/home-about.webp'
 import HeadVisi from '../assets/images/home/home-visi.webp'
 import Footer from '../components/Footer'
-import ContactUs from '../components/ContactUs'
+import EmailContact from '../components/EmailContact'
 
 const Home = () => {
   const lang = localStorage.getItem('lang')
@@ -103,7 +103,9 @@ const Home = () => {
           className='md:w-1/3 sm:w-2/3 w-full mx-auto md:mt-0 mt-5 object-cover'
         />
       </div>
-      <ContactUs />
+      <div className='mb-8'>
+        <EmailContact />
+      </div>
       <Footer />
     </>
   )

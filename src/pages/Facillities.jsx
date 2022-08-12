@@ -12,7 +12,13 @@ const Facilities = () => {
   return (
     <>
       <Header />
-      <div className='px-2 py-2 sm:px-4 container'>About Us</div>
+      <div className='hero hero-facilities flex justify-center'>
+        <div className='container'>
+          <h3 className='text-white text-base md:text-2xl lg:text-3xl xl:text-5xl font-semibold'>
+            Our Facilities
+          </h3>
+        </div>
+      </div>
     </>
   )
 }

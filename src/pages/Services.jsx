@@ -28,7 +28,7 @@ const Services = () => {
       <Header />
       <div className='hero hero-services flex justify-center'>
         <div className='container'>
-          <h3 className='text-white text-base md:text-lg lg:text-xl xl:text-3xl font-semibold mb-5'>
+          <h3 className='text-white text-base md:text-2xl lg:text-3xl xl:text-5xl font-semibold mb-5'>
             Our Product and Services
           </h3>
           <p className='text-white text-sm md:text-base lg:text-lg xl:text-xl'>
