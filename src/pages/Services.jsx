@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import ImageContent from '../components/ImageContent'
 import Metal from '../assets/images/service/repair/metal.webp'
@@ -17,7 +18,7 @@ import HeadPage from '../components/HeadPage'
 
 const Services = () => {
   const lang = localStorage.getItem('lang')
-
+  const navigate = useNavigate()
   console.log(lang)
 
   useEffect(() => {
@@ -48,7 +49,10 @@ const Services = () => {
             Plummer Block, Intermediate Bearing, Trust Bearing, Turbine and
             Generator Bearing.
           </p>
-          <p className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'>
+          <p
+            onClick={() => navigate('/services/repair-docking')}
+            className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'
+          >
             See all
           </p>
         </div>
@@ -62,7 +66,10 @@ const Services = () => {
           <h3 className='text-primary text-base md:text-lg lg:text-xl xl:text-2xl font-semibold mb-5'>
             Services Navigation Equipment
           </h3>
-          <p className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'>
+          <p
+            onClick={() => navigate('/services/services-equipment')}
+            className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'
+          >
             See all
           </p>
         </div>
@@ -81,7 +88,10 @@ const Services = () => {
             At Atlantic Global Maritim, we provide maintenance and repairs for
             lifeboats; rescue boats; and davit’s and which system
           </p>
-          <p className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'>
+          <p
+            onClick={() => navigate('/services/life-saving')}
+            className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'
+          >
             See all
           </p>
         </div>
