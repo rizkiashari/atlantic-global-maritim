@@ -81,7 +81,7 @@ const ContactUs = () => {
               <h3 className='text-secondary font-semibold text-sm md:text-base lg:text-lg xl:text-xl mb-3'>
                 Services
               </h3>
-              <select class='border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 focus:ring-secondary w-full text-secondary'>
+              <select className='border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 focus:ring-secondary w-full text-secondary'>
                 <option value=''>Services</option>
                 <option value='Repair and Docking'>Repair and Docking</option>
                 <option value='Services Navigation Equipment'>

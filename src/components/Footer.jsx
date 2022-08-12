@@ -51,7 +51,7 @@ const Footer = () => {
               <a href='/#about-us'>About Us</a>
             </li>
             <li className='text-white text-xs md:text-base mb-4'>
-              <a href='/#visi-mission'>Visi & Mission</a>
+              <a href='/#visi-misi'>Visi & Mission</a>
             </li>
             <li className='text-white text-xs md:text-base mb-4'>
               <a href='/services'>Services</a>

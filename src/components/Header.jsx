@@ -9,6 +9,8 @@ const Header = () => {
   const currentRoute = useLocation().pathname
   const [language, setLanguage] = useState(localStorage.getItem('lang'))
 
+  console.log(currentRoute)
+
   return (
     <div className='py-4'>
       <Navbar fluid={true} rounded={true}>
@@ -66,10 +68,10 @@ const Header = () => {
               Home
             </p>
           </Navbar.Link>
-          <Navbar.Link href='/about-us'>
+          <Navbar.Link href='/#about-us'>
             <p
               className={`${
-                currentRoute === '/about-us'
+                currentRoute === '/#about-us'
                   ? 'text-primary border-b-2 border-primary'
                   : 'text-secondary'
               } font-poppins pb-2`}
@@ -77,10 +79,10 @@ const Header = () => {
               About Us
             </p>
           </Navbar.Link>
-          <Navbar.Link href='/visi-misi'>
+          <Navbar.Link href='/#visi-misi'>
             <p
               className={`${
-                currentRoute === '/visi-misi'
+                currentRoute === '/#visi-misi'
                   ? 'text-primary border-b-2 border-primary'
                   : 'text-secondary'
               } font-poppins pb-2`}

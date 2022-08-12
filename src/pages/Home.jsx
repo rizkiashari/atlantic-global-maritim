@@ -39,7 +39,10 @@ const Home = () => {
         <img src={HeadTwo} alt='head-2' className='w-1/3' />
         <img src={HeadThree} alt='head-1' className='w-1/3' />
       </div>
-      <div className='flex justify-between gap-6 md:flex-row flex-col'>
+      <div
+        className='flex justify-between gap-6 md:flex-row flex-col'
+        id='about-us'
+      >
         <img
           src={HeadAbout}
           alt='head-1'
@@ -74,7 +77,10 @@ const Home = () => {
         <div className='bg-[#ADADF5] h-5'></div>
         <div className='bg-[#1616A3] h-5'></div>
       </div>
-      <div className='container mt-12 md:mb-14 mb-6 overflow-y-hidden flex justify-between flex-wrap'>
+      <div
+        className='container mt-12 md:mb-14 mb-6 overflow-y-hidden flex justify-between flex-wrap'
+        id='visi-misi'
+      >
         <div>
           <p className='head-text'>Our Vision & Mission</p>
           <h3 className='heading'>Vision</h3>
