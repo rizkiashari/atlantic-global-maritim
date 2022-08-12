@@ -13,6 +13,7 @@ import Life2 from '../assets/images/service/life/life-2.webp'
 import Life3 from '../assets/images/service/life/life-3.webp'
 import Life4 from '../assets/images/service/life/life-4.webp'
 import Footer from '../components/Footer'
+import HeadPage from '../components/HeadPage'
 
 const Services = () => {
   const lang = localStorage.getItem('lang')
@@ -36,19 +37,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className='flex items-center justify-center mt-14'>
-        <div className='w-1/3'>
-          <div className='bg-[#ADADF5] h-5'></div>
-          <div className='bg-[#1616A3] h-5'></div>
-        </div>
-        <p className='text-primary w-1/3 text-center text-base md:text-base lg:text-2xl xl:text-3xl font-semibold'>
-          Our Services
-        </p>
-        <div className='w-1/3'>
-          <div className='bg-[#ADADF5] h-5'></div>
-          <div className='bg-[#1616A3] h-5'></div>
-        </div>
-      </div>
+      <HeadPage title='Our Services' />
       <div className='container md:mt-10 mt-4'>
         <h3 className='text-primary text-base md:text-lg lg:text-xl xl:text-2xl font-semibold mb-5'>
           Repair and Docking

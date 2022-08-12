@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header'
+import HeadPage from '../components/HeadPage'
 
 const Facilities = () => {
   const lang = localStorage.getItem('lang')
@@ -19,6 +20,7 @@ const Facilities = () => {
           </h3>
         </div>
       </div>
+      <HeadPage title='Our Facilities' />
     </>
   )
 }
