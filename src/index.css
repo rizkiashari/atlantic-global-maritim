@@ -52,6 +52,18 @@
   background-image: url('/src/assets/images/facilities/facilities-hero.webp');
 }
 
+.hero-repair {
+  background-image: url('/src/assets/images/service/repair/hero-repiar.webp');
+}
+
+.hero-services-equipment {
+  background-image: url('/src/assets/images/service/services/service-equipment.webp');
+}
+
+.hero-life-saving {
+  background-image: url('/src/assets/images/service/life/life-saving.webp');
+}
+
 .contact-us {
   @apply bg-cover bg-no-repeat bg-center;
   background-image: url('/src/assets/images/home/contact-us.webp');
