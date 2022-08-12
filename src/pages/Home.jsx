@@ -39,21 +39,27 @@ const Home = () => {
         <img src={HeadTwo} alt='head-2' className='w-1/3' />
         <img src={HeadThree} alt='head-1' className='w-1/3' />
       </div>
-      <div className='flex justify-between gap-6'>
-        <img src={HeadAbout} alt='head-1' className='w-1/3 object-cover' />
+      <div className='flex justify-between gap-6 md:flex-row flex-col'>
+        <img
+          src={HeadAbout}
+          alt='head-1'
+          className='md:w-1/3 sm:w-2/3 w-full mx-auto md:px-0 px-4 object-cover'
+        />
         <div className='relative'>
           <div className='w-3/5 absolute top-20 hidden lg:block xl:block -z-10 right-0'>
             <div className='bg-[#ADADF5] h-5'></div>
             <div className='bg-[#1616A3] h-5'></div>
           </div>
-          <p className='head-text'>About Us</p>
-          <h3 className='heading'>PT. Atlantic Global Maritim is</h3>
-          <p className='paragraf md:mb-5 mb-3'>
+          <p className='head-text md:px-0 px-4'>About Us</p>
+          <h3 className='heading md:px-0 px-4'>
+            PT. Atlantic Global Maritim is
+          </h3>
+          <p className='paragraf md:mb-5 mb-3 md:px-0 px-4'>
             a specialist and experienced company in Service, Maintenance,
             Installation and Repair of the Fire-Fighting Appliances, Life-Saving
             Appliances, Lifeboat/Rescue boat and others safety equipments.
           </p>
-          <p className='paragraf'>
+          <p className='paragraf md:px-0 px-4'>
             We also take responsible to Service Maintenance, Repair of the Fire
             Alarm Detection System, Electricity, Diesel Engine, Lightning
             Protection and Others System.
@@ -68,7 +74,7 @@ const Home = () => {
         <div className='bg-[#ADADF5] h-5'></div>
         <div className='bg-[#1616A3] h-5'></div>
       </div>
-      <div className='container mt-12 md:mb-14 mb-6 overflow-y-hidden flex justify-between'>
+      <div className='container mt-12 md:mb-14 mb-6 overflow-y-hidden flex justify-between flex-wrap'>
         <div>
           <p className='head-text'>Our Vision & Mission</p>
           <h3 className='heading'>Vision</h3>
@@ -85,7 +91,11 @@ const Home = () => {
             dedicated and disciplined to produce the best quality
           </p>
         </div>
-        <img src={HeadVisi} alt='head-1' className='w-1/3 object-cover' />
+        <img
+          src={HeadVisi}
+          alt='head-1'
+          className='md:w-1/3 sm:w-2/3 w-full mx-auto md:mt-0 mt-5 object-cover'
+        />
       </div>
       <ContactUs />
       <Footer />

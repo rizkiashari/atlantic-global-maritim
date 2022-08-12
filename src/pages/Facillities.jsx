@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from '../components/Header'
 
-const AboutUs = () => {
+const Facilities = () => {
   const lang = localStorage.getItem('lang')
 
   console.log(lang)
@@ -17,4 +17,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default Facilities

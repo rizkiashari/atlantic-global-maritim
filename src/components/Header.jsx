@@ -10,10 +10,10 @@ const Header = () => {
   const [language, setLanguage] = useState(localStorage.getItem('lang'))
 
   return (
-    <div className='py-4 container'>
+    <div className='py-4'>
       <Navbar fluid={true} rounded={true}>
         <Navbar.Brand href='/'>
-          <img src={Logo} alt='logo' className='w-52' />
+          <img src={Logo} alt='logo' className='md:w-52 sm:w-40 w-full' />
         </Navbar.Brand>
         <div className='flex md:order-2'>
           <Dropdown
@@ -97,6 +97,17 @@ const Header = () => {
               } font-poppins pb-2`}
             >
               Services
+            </p>
+          </Navbar.Link>
+          <Navbar.Link href='/facilities'>
+            <p
+              className={`${
+                currentRoute === '/facilities'
+                  ? 'text-primary border-b-2 border-primary'
+                  : 'text-secondary'
+              } font-poppins pb-2`}
+            >
+              Facilities
             </p>
           </Navbar.Link>
           <Navbar.Link href='/contact-us'>
