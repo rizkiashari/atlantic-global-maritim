@@ -14,7 +14,7 @@ const ContactUs = () => {
     <>
       <Header />
       <div className='hero hero-contactus flex justify-center'>
-        <div className='container'>
+        <div className='container h-fit pb-2'>
           <h3 className='text-white text-base md:text-2xl lg:text-3xl xl:text-5xl font-semibold'>
             {lang === 'id' ? 'Hubungi Kami' : 'Contact Us'}
           </h3>
