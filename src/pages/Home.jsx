@@ -11,8 +11,6 @@ import EmailContact from '../components/EmailContact'
 const Home = () => {
   const lang = localStorage.getItem('lang')
 
-  console.log(lang)
-
   useEffect(() => {
     document.title = 'Atlantic Global Maritim | Home'
   }, [])
@@ -22,15 +20,25 @@ const Home = () => {
       <Header />
       <div className='hero hero-home mb-3'>
         <div className='md:pt-16 sm:pt-12 pt-5 overflow-y-hidden container  md:px-0 px-4'>
-          <p className='head-text'>One-stop Solution for Ship Safety</p>
+          <p className='head-text'>
+            {lang === 'id'
+              ? 'Solusi Satu Atap untuk Keselamatan Kapal'
+              : 'One-stop Solution for Ship Safety'}
+          </p>
           <h1 className='font-semibold text-base  md:text-2xl lg:text-4xl 2xl:text-5xl md:mt-6 my-3 md:mb-12 max-w-2xl w-full leading-normal'>
-            We Are Professional Marine Company in Indonesia
+            {lang === 'id'
+              ? 'Kami Adalah Perusahaan Kelautan Profesional di Indonesia'
+              : 'We Are Professional Marine Company in Indonesia'}
           </h1>
           <p className='paragraf'>
-            <b className='text-primary'>a specialist and experienced company</b>{' '}
-            in Service, Maintenance, Installation and Repair of the
-            Fire-Fighting Appliances, Life-Saving Appliances, Lifeboat/Rescue
-            boat and others safety equipments.
+            <b className='text-primary'>
+              {lang === 'id'
+                ? 'sebuah perusahaan spesialis dan berpengalaman '
+                : 'a specialist and experienced company '}
+            </b>
+            {lang === 'id'
+              ? 'di bidang Pelayanan, Pemeliharaan, Pemasangan dan Perbaikan Alat Pemadam Kebakaran, Alat Penyelamat Jiwa, Sekoci/Perahu Penyelamat dan peralatan keselamatan lainnya.'
+              : 'in Service, Maintenance, Installation and Repair of the Fire-Fighting Appliances, Life-Saving Appliances, Lifeboat/Rescue boat and others safety equipments.'}
           </p>
         </div>
       </div>
@@ -53,19 +61,29 @@ const Home = () => {
             <div className='bg-[#ADADF5] h-5'></div>
             <div className='bg-[#1616A3] h-5'></div>
           </div>
-          <p className='head-text md:px-0 px-4'>About Us</p>
-          <h3 className='heading md:px-0 px-4'>
-            PT. Atlantic Global Maritim is
-          </h3>
-          <p className='paragraf md:mb-5 mb-3 md:px-0 px-4'>
-            a specialist and experienced company in Service, Maintenance,
-            Installation and Repair of the Fire-Fighting Appliances, Life-Saving
-            Appliances, Lifeboat/Rescue boat and others safety equipments.
+          <p className='head-text md:px-0 px-4'>
+            {lang === 'id' ? 'Tentang kami' : 'About Us'}
           </p>
-          <p className='paragraf md:px-0 px-4'>
-            We also take responsible to Service Maintenance, Repair of the Fire
-            Alarm Detection System, Electricity, Diesel Engine, Lightning
-            Protection and Others System.
+          <h3 className='heading md:px-0 px-4'>
+            {lang === 'id'
+              ? 'PT. Atlantic Global Maritim adalah'
+              : 'PT. Atlantic Global Maritim is'}
+          </h3>
+          <p className='paragraf md:mb-5 mb-3 md:px-2 px-4'>
+            {lang === 'id'
+              ? ` sebuah perusahaan spesialis dan berpengalaman di bidang Jasa, Pemeliharaan, Pemasangan dan Perbaikan Alat Pemadam Kebakaran, Alat Penyelamat Jiwa, Sekoci/Perahu Penyelamat dan peralatan keselamatan lainnya.`
+              : ` a specialist and experienced company in Service, Maintenance,
+            Installation and Repair of the Fire-Fighting Appliances, Life-Saving
+            Appliances, Lifeboat/Rescue boat and others safety equipments.`}
+          </p>
+          <p className='paragraf md:px-2 px-4'>
+            {lang === 'id'
+              ? `Kami juga bertanggung jawab untuk Service Maintenance, Perbaikan Api
+              Sistem Deteksi Alarm, Listrik, Mesin Diesel, Petir
+              Sistem Proteksi dan Lainnya.`
+              : `We also take responsible to Service Maintenance, Repair of the Fire
+              Alarm Detection System, Electricity, Diesel Engine, Lightning
+              Protection and Others System.`}
           </p>
         </div>
       </div>
@@ -82,19 +100,25 @@ const Home = () => {
         id='visi-misi'
       >
         <div>
-          <p className='head-text'>Our Vision & Mission</p>
-          <h3 className='heading'>Vision</h3>
-          <p className='paragraf mt-2 mb-12'>
-            Prioritize business activities are integrated and programmed to
-            provide optimum results and satisfaction to the consumer, with good
-            relations to all consumers.
+          <p className='head-text'>
+            {lang === 'id' ? 'Visi & Misi Kami' : 'Our Vision & Mission'}
           </p>
-          <h3 className='heading'>Mision</h3>
+          <h3 className='heading'>{lang === 'id' ? 'Visi' : 'Vision'}</h3>
+          <p className='paragraf mt-2 mb-12'>
+            {lang === 'id'
+              ? `Mengutamakan kegiatan usaha yang terintegrasi dan terprogram untuk memberikan hasil dan kepuasan yang optimal kepada konsumen, dengan hubungan dengan semua konsumen.`
+              : `Prioritize business activities are integrated and programmed to provide optimum results and satisfaction to the consumer, with good relations to all consumers.`}
+          </p>
+          <h3 className='heading'>{lang === 'id' ? 'Misi' : 'Mision'}</h3>
           <p className='paragraf mt-2'>
             <b className='text-primary'>PT. Atlantic Global Maritim,</b> a
-            general trading company in the field of maritime services in a
-            professional and organized with the support of experts, and
-            dedicated and disciplined to produce the best quality
+            {lang === 'id'
+              ? `perusahaan perdagangan umum di bidang jasa maritim di a
+              profesional dan terorganisir dengan dukungan tenaga ahli, dan
+              berdedikasi dan disiplin untuk menghasilkan kualitas terbaik`
+              : ` general trading company in the field of maritime services in a
+              professional and organized with the support of experts, and
+              dedicated and disciplined to produce the best quality`}
           </p>
         </div>
         <img

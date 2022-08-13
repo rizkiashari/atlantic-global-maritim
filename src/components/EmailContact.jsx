@@ -13,18 +13,24 @@ const EmailContact = () => {
         <div className='md:w-1/2 w-full'>
           <div className='bg-white mb-4 md:pl-40 pl-4 pr-4 rounded-tr-md rounded-br-md pt-10 pb-12'>
             <h3 className='text-secondary font-semibold xl:text-4xl lg:text-3xl md:text-xl text-base mb-2'>
-              Want to cooperate with
+              {lang === 'id'
+                ? 'Ingin bekerja sama dengan'
+                : 'Want to cooperate with'}
             </h3>
             <h3 className='text-primary font-semibold xl:text-4xl lg:text-3xl md:text-xl text-base mb-5'>
               PT. Atlantic Global Maritim?
             </h3>
             <p className='text-secondary font-medium xl:text-xl lg:text-lg md:text-base text-sm'>
-              Let's start collaborating to optimize ship safety and security.
+              {lang === 'id'
+                ? 'Mari mulai berkolaborasi untuk mengoptimalkan keselamatan dan keamanan kapal.'
+                : "Let's start collaborating to optimize ship safety and security."}
             </p>
           </div>
           <div className='bg-white mb-4 md:pl-40 pl-4 pr-4 rounded-tr-md rounded-br-md py-4'>
             <p className='text-secondary font-medium xl:text-xl lg:text-lg md:text-base text-sm'>
-              Please tell us what you need by filling out the side form.
+              {lang === 'id'
+                ? 'Tolong beritahu kami apa yang Anda butuhkan dengan mengisi formulir disamping.'
+                : 'Please tell us what you need by filling out the side form.'}
             </p>
           </div>
           <div className='flex items-center justify-center xl:gap-x-16 lg:gap-x-12 md:gap-x-10 sm:gap-x-8 gap-x-5 mt-14'>
@@ -54,12 +60,16 @@ const EmailContact = () => {
           <form className='flex md:flex-nowrap flex-wrap gap-5'>
             <div className='w-full'>
               <h3 className='text-secondary font-semibold text-sm md:text-base lg:text-lg xl:text-xl mb-3'>
-                Fullname
+                {lang === 'id' ? 'Nama Lengkap' : 'Fullname'}
               </h3>
               <input
                 name='fullname'
                 type='text'
-                placeholder='Please input your fullname'
+                placeholder={
+                  lang === 'id'
+                    ? 'Tolong isi naam lengkap anda'
+                    : 'Please input your fullname'
+                }
                 className='text-secondary border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 w-full focus:ring-secondary mb-5 md:text-base text-sm placeholder:text-[#CCCCCC]'
               />
               <h3 className='text-secondary font-semibold text-sm md:text-base lg:text-lg xl:text-xl mb-3'>
@@ -68,16 +78,24 @@ const EmailContact = () => {
               <input
                 name='email'
                 type='email'
-                placeholder='Please input your email'
+                placeholder={
+                  lang === 'id'
+                    ? 'Tolong isi email anda'
+                    : 'Please input your email'
+                }
                 className='text-secondary border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 w-full md:text-base text-sm focus:ring-secondary mb-5 placeholder:text-[#CCCCCC]'
               />
               <h3 className='text-secondary font-semibold text-sm md:text-base lg:text-lg xl:text-xl mb-3'>
-                Company
+                {lang === 'id' ? 'Perusahaan' : 'Company'}
               </h3>
               <input
                 name='company'
                 type='text'
-                placeholder='Please input your company'
+                placeholder={
+                  lang === 'id'
+                    ? 'Tolong isi nama perusahaan anda'
+                    : 'Please input your company'
+                }
                 className='text-secondary border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 w-full md:text-base text-sm focus:ring-secondary mb-5 placeholder:text-[#CCCCCC]'
               />
               <h3 className='text-secondary font-semibold text-sm md:text-base lg:text-lg xl:text-xl mb-3'>
@@ -96,11 +114,15 @@ const EmailContact = () => {
             </div>
             <div className='w-full'>
               <h3 className='text-secondary font-semibold text-sm md:text-base lg:text-lg xl:text-xl mb-3'>
-                Message
+                {lang === 'id' ? 'Pesan' : 'Message'}
               </h3>
               <textarea
                 name='message'
-                placeholder='Please input your needs'
+                placeholder={
+                  lang === 'id'
+                    ? 'Silahkan masukan kebutuhan anda'
+                    : 'Please input your needs'
+                }
                 className='text-[#CCCCCC] border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 w-full focus:ring-secondary mb-12 placeholder:text-[#CCCCCC] resize-none'
                 rows={8}
               ></textarea>
@@ -109,7 +131,7 @@ const EmailContact = () => {
                 type='submit'
                 className='w-full md:text-lg text-base bg-primary text-white text-center py-4 rounded-full font-semibold'
               >
-                Send
+                {lang === 'id' ? 'Kirim' : 'Send'}
               </button>
             </div>
           </form>

@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='flex md:flex-wrap flex-nowrap md:flex-row sm:flex-row flex-col gap-5 justify-between items-start'>
         <div>
           <h3 className='text-white text-sm md:text-base lg:text-lg xl:text-xl font-semibold mb-5'>
-            Our Address
+            {lang === 'id' ? 'Alamat kami' : 'Our Address'}
           </h3>
           <p className='text-white text-xs md:text-base mb-10 md:max-w-md max-w-sm'>
             Perum Permata Regency Blok G4 No.8 Rt.006/Rw.022 Kel.Wanasari
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className='text-white text-sm md:text-base lg:text-lg xl:text-xl font-semibold mb-5'>
-            Our Address
+            {lang === 'id' ? 'Peta Situs' : 'Site Map'}
           </h3>
           <ul className='list-disc ml-8'>
             <li className='text-white text-xs md:text-base mb-4'>
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className='text-white text-sm md:text-base lg:text-lg xl:text-xl font-semibold mb-5'>
-            Map Location
+            {lang === 'id' ? 'Peta Lokasi' : ' Map Location'}
           </h3>
           {/* Here Map */}
         </div>
