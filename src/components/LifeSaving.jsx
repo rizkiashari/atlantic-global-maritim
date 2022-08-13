@@ -48,22 +48,20 @@ const LifeSaving = () => {
           />
           <ImageContent image={LifeLED} isText text='Life Jacket LED' />
         </div>
-        <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
+        <div className='grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
           <ImageContent image={Life1} />
           <ImageContent image={Life2} />
           <ImageContent image={Life3} />
-        </div>
-        <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
           <ImageContent image={Life4} />
-          <ImageContent image={Life5} />
-          <ImageContent image={Life6} />
         </div>
-        <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
+        <div className='grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
+          <img src={Life5} alt='life 5' className='w-full h-full' />
+          <img src={Life6} alt='life 6' className='w-full h-full' />
           <ImageContent image={Life7} />
           <ImageContent image={Life8} />
-          <ImageContent image={Life9} />
         </div>
-        <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
+        <div className='grid md:grid-cols-4 grid-cols-2 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
+          <ImageContent image={Life9} />
           <ImageContent image={Life10} />
           <ImageContent image={Life11} />
           <ImageContent image={Life12} />
