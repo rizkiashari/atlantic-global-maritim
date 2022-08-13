@@ -40,7 +40,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <HeadPage title='Our Services' />
+      <HeadPage title={lang === 'id' ? 'Layanan kami' : 'Our Services'} />
       <div className='container md:mt-10 mt-4'>
         <h3 className='text-primary text-base md:text-lg lg:text-xl xl:text-2xl font-semibold mb-5'>
           Repair and Docking

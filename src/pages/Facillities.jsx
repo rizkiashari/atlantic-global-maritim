@@ -36,7 +36,7 @@ const Facilities = () => {
           </h3>
         </div>
       </div>
-      <HeadPage title='Our Facilities' />
+      <HeadPage title={lang === 'id' ? 'Fasilitas Kami' : 'Our Facilities'} />
       <div className='container mb-12 md:mt-10 mt-4'>
         <div className='flex justify-center gap-6 md:gap-10 md:flex-nowrap flex-wrap mb-10'>
           <div className='flex flex-col gap-6 md:gap-10'>
