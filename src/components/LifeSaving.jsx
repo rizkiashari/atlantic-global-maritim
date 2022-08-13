@@ -68,19 +68,25 @@ const LifeSaving = () => {
           <ImageContent image={Life11} />
           <ImageContent image={Life12} />
         </div>
-        <img
-          src={Life13}
-          alt='Life 13'
-          className='object-cover w-full md:px-0 px-4 md:mb-12 mb-5'
-        />
-        <img
-          src={Life14}
-          alt='Life 14'
-          className='object-cover w-full md:px-0 px-4 md:mb-12 mb-5'
-        />
+        <div className='grid grid-cols-2 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
+          <img
+            src={Life13}
+            alt='Life 13'
+            className='object-cover w-full h-full'
+          />
+          <img
+            src={Life14}
+            alt='Life 14'
+            className='object-cover w-full h-full'
+          />
+        </div>
         <div className='grid grid-cols-2 md:gap-8 gap-4 md:px-0 px-4 md:mb-12 mb-5 justify-center items-center'>
           <img src={Life15} alt='Life 15' className='w-full h-full' />
-          <img src={Life16} alt='Life 16' className='object-cover w-full' />
+          <img
+            src={Life16}
+            alt='Life 16'
+            className='object-cover w-full h-full'
+          />
         </div>
       </div>
     </>
