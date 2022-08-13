@@ -33,8 +33,11 @@ const LifeSaving = () => {
             Life Saving Appliances
           </h3>
           <p className='text-white text-sm md:text-base lg:text-lg xl:text-xl max-w-4xl'>
-            At Atlantic Global Maritim, we provide maintenance and repairs for
-            lifeboats; rescue boats; and davit’s and which system.
+            {lang === 'id'
+              ? `Di Atlantic Global Maritim, kami menyediakan perawatan dan perbaikan untuk
+              sekoci, perahu penyelamat dan davit dan sistem yang mana.`
+              : `At Atlantic Global Maritim, we provide maintenance and repairs for
+              lifeboats, rescue boats and davit’s and which system.`}
           </p>
         </div>
       </div>

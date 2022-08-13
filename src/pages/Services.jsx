@@ -19,8 +19,6 @@ import HeadPage from '../components/HeadPage'
 const Services = () => {
   const lang = localStorage.getItem('lang')
   const navigate = useNavigate()
-  console.log(lang)
-
   useEffect(() => {
     document.title = 'Atlantic Global Maritim | Services'
   }, [])
@@ -31,10 +29,14 @@ const Services = () => {
       <div className='hero hero-services flex justify-center'>
         <div className='container'>
           <h3 className='text-white text-base md:text-2xl lg:text-3xl xl:text-5xl font-semibold mb-5'>
-            Our Product and Services
+            {lang === 'id'
+              ? 'Produk dan Layanan kami'
+              : 'Our Product and Services'}
           </h3>
           <p className='text-white text-sm md:text-base lg:text-lg xl:text-xl'>
-            List of products and services offered by us
+            {lang === 'id'
+              ? 'Daftar produk dan layanan yang ditawarkan oleh kami'
+              : 'List of products and services offered by us'}
           </p>
         </div>
       </div>
@@ -45,15 +47,19 @@ const Services = () => {
         </h3>
         <div className='flex items-center md:mb-12 mb-8 justify-between'>
           <p className='font-medium text-secondary text-sm md:text-base md:max-w-4xl max-w-md w-full'>
-            Shaft Bearing Gearbox, Engine Crankshaft, Pump Shaft, Drum Block,
-            Plummer Block, Intermediate Bearing, Trust Bearing, Turbine and
-            Generator Bearing.
+            {lang === 'id'
+              ? `Gearbox Bantalan Poros, Poros Engkol Mesin, Poros Pompa, Blok Drum,
+              Blok Plummer, Bantalan Menengah, Bantalan Kepercayaan, Turbin dan
+              Bantalan Genset.`
+              : `Shaft Bearing Gearbox, Engine Crankshaft, Pump Shaft, Drum Block,
+              Plummer Block, Intermediate Bearing, Trust Bearing, Turbine and
+              Generator Bearing.`}
           </p>
           <p
             onClick={() => navigate('/services/repair-docking')}
             className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'
           >
-            See all
+            {lang === 'id' ? 'Lihat semua' : 'See all'}
           </p>
         </div>
         <div className='grid md:grid-cols-4 grid-cols-2 gap-6 md:px-0 px-4 md:mb-12 mb-5'>
@@ -70,7 +76,7 @@ const Services = () => {
             onClick={() => navigate('/services/services-equipment')}
             className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'
           >
-            See all
+            {lang === 'id' ? 'Lihat semua' : 'See all'}
           </p>
         </div>
 
@@ -85,14 +91,17 @@ const Services = () => {
         </h3>
         <div className='flex items-center md:mb-12 mb-8 justify-between'>
           <p className='font-medium text-secondary text-sm md:text-base md:max-w-4xl max-w-md w-full'>
-            At Atlantic Global Maritim, we provide maintenance and repairs for
-            lifeboats; rescue boats; and davit’s and which system
+            {lang === 'id'
+              ? `Di Atlantic Global Maritim, kami menyediakan perawatan dan perbaikan untuk
+              sekoci; perahu penyelamat; dan davit dan sistem mana`
+              : `At Atlantic Global Maritim, we provide maintenance and repairs for
+              lifeboats; rescue boats; and davit’s and which system`}
           </p>
           <p
             onClick={() => navigate('/services/life-saving')}
             className='text-primary text-base md:text-lg font-semibold cursor-pointer max-w-fit w-full'
           >
-            See all
+            {lang === 'id' ? 'Lihat semua' : 'See all'}
           </p>
         </div>
         <div className='grid md:grid-cols-4 grid-cols-2 md:gap-12 gap-5 md:px-0 px-4 md:mb-12 mb-5'>

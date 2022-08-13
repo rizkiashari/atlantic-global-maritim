@@ -12,8 +12,6 @@ import AisProduct from '../assets/images/service/services/ais-product.webp'
 import VFHRadio from '../assets/images/service/services/vhf-radio.webp'
 
 const ServicesEquipment = () => {
-  const lang = localStorage.getItem('lang')
-
   return (
     <>
       <div className='hero hero-services-equipment flex justify-center'>

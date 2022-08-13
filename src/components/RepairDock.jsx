@@ -42,9 +42,13 @@ const RepairDock = () => {
             Repair and Docking
           </h3>
           <p className='text-white text-sm md:text-base lg:text-lg xl:text-xl max-w-4xl'>
-            Shaft Bearing Gearbox, Engine Crankshaft, Pump Shaft, Drum Block,
-            Plummer Block, Intermediate Bearing, Trust Bearing, Turbine and
-            Generator Bearing.
+            {lang === 'id'
+              ? `Gearbox Bantalan Poros, Poros Engkol Mesin, Poros Pompa, Blok Drum,
+              Blok Plummer, Bantalan Menengah, Bantalan Kepercayaan, Turbin dan
+              Bantalan Genset.`
+              : `Shaft Bearing Gearbox, Engine Crankshaft, Pump Shaft, Drum Block,
+              Plummer Block, Intermediate Bearing, Trust Bearing, Turbine and
+              Generator Bearing.`}
           </p>
         </div>
       </div>
