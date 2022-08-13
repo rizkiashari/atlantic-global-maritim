@@ -22,7 +22,6 @@ import Faci15 from '../assets/images/facilities/faci-15.webp'
 const Facilities = () => {
   const lang = localStorage.getItem('lang')
 
-  console.log(lang)
   useEffect(() => {
     document.title = 'Atlantic Global Maritim | About Us'
   }, [])
@@ -33,7 +32,7 @@ const Facilities = () => {
       <div className='hero hero-facilities flex justify-center'>
         <div className='container'>
           <h3 className='text-white text-base md:text-2xl lg:text-3xl xl:text-5xl font-semibold'>
-            Our Facilities
+            {lang === 'id' ? 'Fasilitas Kami' : 'Our Facilities'}
           </h3>
         </div>
       </div>

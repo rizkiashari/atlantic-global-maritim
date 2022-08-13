@@ -7,7 +7,9 @@ import { useLocation } from 'react-router-dom'
 
 const Header = () => {
   const currentRoute = useLocation().pathname
-  const [language, setLanguage] = useState(localStorage.getItem('lang'))
+  const [language, setLanguage] = useState(
+    localStorage.getItem('lang') || localStorage.setItem('lang', 'id')
+  )
 
   return (
     <div className='py-4'>
@@ -63,7 +65,7 @@ const Header = () => {
                   : 'text-secondary'
               } font-poppins pb-2`}
             >
-              Home
+              {language === 'en' ? 'Home' : 'Beranda'}
             </p>
           </Navbar.Link>
           <Navbar.Link href='/#about-us'>
@@ -74,7 +76,7 @@ const Header = () => {
                   : 'text-secondary'
               } font-poppins pb-2`}
             >
-              About Us
+              {language === 'en' ? 'About Us' : 'Tentang Kami'}
             </p>
           </Navbar.Link>
           <Navbar.Link href='/#visi-misi'>
@@ -85,7 +87,7 @@ const Header = () => {
                   : 'text-secondary'
               } font-poppins pb-2`}
             >
-              Visi & Mission
+              {language === 'en' ? 'Vision & Mission' : 'Visi & Misi'}
             </p>
           </Navbar.Link>
           <Navbar.Link href='/services'>
@@ -99,7 +101,7 @@ const Header = () => {
                   : 'text-secondary'
               } font-poppins pb-2`}
             >
-              Services
+              {language === 'en' ? 'Services' : 'Layanan'}
             </p>
           </Navbar.Link>
           <Navbar.Link href='/facilities'>
@@ -110,7 +112,7 @@ const Header = () => {
                   : 'text-secondary'
               } font-poppins pb-2`}
             >
-              Facilities
+              {language === 'en' ? 'Facilities' : 'Fasilitas'}
             </p>
           </Navbar.Link>
           <Navbar.Link href='/contact-us'>
@@ -121,7 +123,7 @@ const Header = () => {
                   : 'text-secondary'
               } font-poppins pb-2`}
             >
-              Contact Us
+              {language === 'en' ? 'Contact Us' : 'Kontak Kami'}
             </p>
           </Navbar.Link>
         </Navbar.Collapse>
