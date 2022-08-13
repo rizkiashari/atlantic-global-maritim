@@ -95,31 +95,31 @@ const RepairDock = () => {
           <img
             src={Welding1}
             alt='welding 1'
-            className='object-cover h-full w-full'
+            className='object-cover h-full w-full rounded'
           />
           <img
             src={Welding3}
             alt='welding 2'
-            className='object-cover h-full w-full'
+            className='object-cover h-full w-full rounded'
           />
         </div>
         <div className='grid  grid-cols-1 md:gap-6 gap-4 md:px-0 px-4 md:mb-12 mb-5'>
           <img
             src={Welding2}
             alt='welding 3'
-            className='object-cover h-full w-full'
+            className='object-cover h-full w-full rounded'
           />
         </div>
         <div className='grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-4 md:px-0 px-4 md:mb-12 mb-5'>
           <img
             src={Welding4}
             alt='welding 4'
-            className='object-cover h-full w-full'
+            className='object-cover h-full w-full rounded'
           />
           <img
             src={Welding5}
             alt='welding 5'
-            className='object-cover h-full w-full'
+            className='object-cover h-full w-full rounded'
           />
         </div>
       </div>
