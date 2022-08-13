@@ -4,6 +4,8 @@ import EmailIcon from '../assets/icon/gmail-icon.webp'
 import WebIcon from '../assets/icon/website.webp'
 
 const Footer = () => {
+  const lang = localStorage.getItem('lang')
+
   return (
     <div className='footer-hero md:px-14 px-6 md:py-6 py-4 text-white'>
       <img

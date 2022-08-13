@@ -32,6 +32,8 @@ import Welding4 from '../assets/images/service/repair/welding-4.webp'
 import Welding5 from '../assets/images/service/repair/welding-5.webp'
 
 const RepairDock = () => {
+  const lang = localStorage.getItem('lang')
+
   return (
     <>
       <div className='hero hero-repair flex justify-center'>

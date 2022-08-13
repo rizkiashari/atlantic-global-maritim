@@ -23,6 +23,8 @@ import Life15 from '../assets/images/service/life/life-15.webp'
 import Life16 from '../assets/images/service/life/life-16.webp'
 
 const LifeSaving = () => {
+  const lang = localStorage.getItem('lang')
+
   return (
     <>
       <div className='hero hero-life-saving flex justify-center'>

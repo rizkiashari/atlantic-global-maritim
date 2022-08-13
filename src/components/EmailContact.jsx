@@ -5,6 +5,8 @@ import LinkedLncon from '../assets/icon/linkedln-icon.webp'
 import WaIcon from '../assets/icon/wa-icon.webp'
 
 const EmailContact = () => {
+  const lang = localStorage.getItem('lang')
+
   return (
     <div className='contact-us py-5'>
       <div className='flex gap-6 w-full flex-wrap md:flex-nowrap'>
