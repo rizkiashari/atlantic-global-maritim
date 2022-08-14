@@ -17,8 +17,10 @@ const EmailContact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault()
-    // mailto:
-    window.location.href = `mailto:${valueEmail.email}?subject=${valueEmail.services}&body=${valueEmail.message}`
+
+    const { email, fullname, company, services, message } = valueEmail
+
+    window.location.href = `mailto:atlantic.global.maritim@gmail.com?subject=${valueEmail.services}&body=${valueEmail.message}`
   }
 
   return (
