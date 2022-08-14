@@ -44,7 +44,7 @@ const ContactUs = () => {
         title='map contact us'
         className='border-none w-full h-[80vh]'
         loading='lazy'
-        referrerpolicy='no-referrer-when-downgrade'
+        referrerPolicy='no-referrer-when-downgrade'
       ></iframe>
       <Footer />
     </>

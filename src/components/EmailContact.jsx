@@ -7,6 +7,20 @@ import WaIcon from '../assets/icon/wa-icon.webp'
 const EmailContact = () => {
   const lang = localStorage.getItem('lang')
 
+  const [valueEmail, setValueEmail] = React.useState({
+    email: '',
+    fullname: '',
+    company: '',
+    services: '',
+    message: '',
+  })
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+    // mailto:
+    window.location.href = `mailto:${valueEmail.email}?subject=${valueEmail.services}&body=${valueEmail.message}`
+  }
+
   return (
     <div className='contact-us py-5'>
       <div className='flex gap-6 w-full flex-wrap md:flex-nowrap'>
@@ -57,7 +71,10 @@ const EmailContact = () => {
           </div>
         </div>
         <div className='bg-white md:w-1/2 w-full md:px-6 px-4 rounded-tl-md rounded-bl-md md:pt-8 pt-6 md:pb-10 pb-8'>
-          <form className='flex md:flex-nowrap flex-wrap gap-5'>
+          <form
+            className='flex md:flex-nowrap flex-wrap gap-5'
+            onSubmit={onSubmit}
+          >
             <div className='w-full'>
               <h3 className='text-secondary font-semibold text-sm md:text-base lg:text-lg xl:text-xl mb-3'>
                 {lang === 'id' ? 'Nama Lengkap' : 'Fullname'}
@@ -65,6 +82,9 @@ const EmailContact = () => {
               <input
                 name='fullname'
                 type='text'
+                onChange={(e) =>
+                  setValueEmail({ ...valueEmail, fullname: e.target.value })
+                }
                 placeholder={
                   lang === 'id'
                     ? 'Tolong isi naam lengkap anda'
@@ -78,6 +98,9 @@ const EmailContact = () => {
               <input
                 name='email'
                 type='email'
+                onChange={(e) =>
+                  setValueEmail({ ...valueEmail, email: e.target.value })
+                }
                 placeholder={
                   lang === 'id'
                     ? 'Tolong isi email anda'
@@ -91,6 +114,9 @@ const EmailContact = () => {
               <input
                 name='company'
                 type='text'
+                onChange={(e) =>
+                  setValueEmail({ ...valueEmail, company: e.target.value })
+                }
                 placeholder={
                   lang === 'id'
                     ? 'Tolong isi nama perusahaan anda'
@@ -101,7 +127,12 @@ const EmailContact = () => {
               <h3 className='text-secondary font-semibold text-sm md:text-base lg:text-lg xl:text-xl mb-3'>
                 Services
               </h3>
-              <select className='border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 focus:ring-secondary w-full text-secondary'>
+              <select
+                className='border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 focus:ring-secondary w-full text-secondary'
+                onChange={(e) =>
+                  setValueEmail({ ...valueEmail, services: e.target.value })
+                }
+              >
                 <option value=''>Services</option>
                 <option value='Repair and Docking'>Repair and Docking</option>
                 <option value='Services Navigation Equipment'>
@@ -118,12 +149,15 @@ const EmailContact = () => {
               </h3>
               <textarea
                 name='message'
+                onChange={(e) =>
+                  setValueEmail({ ...valueEmail, message: e.target.value })
+                }
                 placeholder={
                   lang === 'id'
                     ? 'Silahkan masukan kebutuhan anda'
                     : 'Please input your needs'
                 }
-                className='text-[#CCCCCC] border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 w-full focus:ring-secondary mb-12 placeholder:text-[#CCCCCC] resize-none'
+                className='text-secondary border border-[#CCCCCC] rounded-md px-4 py-3 focus:ring-1 w-full focus:ring-secondary mb-12 placeholder:text-[#CCCCCC] resize-none'
                 rows={8}
               ></textarea>
 

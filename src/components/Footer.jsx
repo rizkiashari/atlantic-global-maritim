@@ -91,7 +91,7 @@ const Footer = () => {
             title='map footer'
             className='border-none md:w-52 w-full h-full'
             loading='lazy'
-            referrerpolicy='no-referrer-when-downgrade'
+            referrerPolicy='no-referrer-when-downgrade'
           ></iframe>
         </div>
       </div>
