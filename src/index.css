@@ -76,3 +76,7 @@
   background-image: url('/src/assets/images/home/home-last.webp');
   max-height: 100%;
 }
+
+.map-footer {
+  @apply w-80 h-64;
+}
