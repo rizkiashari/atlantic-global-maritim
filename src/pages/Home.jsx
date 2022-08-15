@@ -19,7 +19,7 @@ const Home = () => {
     <>
       <Header />
       <div className='hero hero-home mb-3'>
-        <div className='md:pt-16 sm:pt-12 pt-5 overflow-y-hidden container  md:px-0 px-4'>
+        <div className='md:pt-16 sm:pt-12 pt-5 overflow-y-hidden container px-4'>
           <p className='head-text'>
             {lang === 'id'
               ? 'Solusi Satu Atap untuk Keselamatan Kapal'
