@@ -20,7 +20,7 @@ const EmailContact = () => {
 
     const { email, fullname, company, services, message } = valueEmail
 
-    window.location.href = `mailto:atlantic.global.maritim@gmail.com?subject=${valueEmail.services}&body=${valueEmail.message}`
+    window.location.href = `mailto:atlantic.global.maritim@gmail.com?subject=${services}&body=Hi, I'm ${fullname}|${email}%0DFrom ${company}%0D${message}`
   }
 
   return (
