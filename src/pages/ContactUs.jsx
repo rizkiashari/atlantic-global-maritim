@@ -7,7 +7,8 @@ const ContactUs = () => {
   const lang = localStorage.getItem('lang')
 
   useEffect(() => {
-    document.title = 'Atlantic Global Maritim | Contact Us'
+    document.title =
+      'Atlantic Global Maritim - One Stop Solution for Ship Safety | Contact Us'
   }, [])
 
   return (

@@ -20,7 +20,8 @@ const Services = () => {
   const lang = localStorage.getItem('lang')
   const navigate = useNavigate()
   useEffect(() => {
-    document.title = 'Atlantic Global Maritim | Services'
+    document.title =
+      'Atlantic Global Maritim - One Stop Solution for Ship Safety | Services'
   }, [])
 
   return (

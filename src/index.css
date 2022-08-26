@@ -18,11 +18,11 @@
   }
 
   .head-text {
-    @apply font-caveat text-base md:text-xl lg:text-3xl 2xl:text-4xl text-black-800;
+    @apply font-caveat text-lg md:text-xl lg:text-3xl 2xl:text-4xl text-black-800;
   }
 
   .heading {
-    @apply font-medium text-base  md:text-2xl lg:text-4xl 2xl:text-5xl md:mt-6 my-3 md:mb-8 max-w-xl w-full leading-normal;
+    @apply font-medium text-lg md:text-2xl lg:text-4xl 2xl:text-5xl md:mt-6 my-3 md:mb-8 max-w-xl w-full leading-normal;
   }
 }
 
@@ -31,9 +31,7 @@
 }
 
 .hero {
-  @apply bg-cover bg-no-repeat bg-center;
-  max-height: 100%;
-  min-height: 70vh;
+  @apply bg-cover bg-no-repeat bg-center max-h-full md:min-h-[70vh] min-h-[25rem];
 }
 
 .hero-home {

@@ -5,9 +5,15 @@ import RepairDock from '../components/RepairDock'
 import ServicesEquipment from '../components/ServicesEquipment'
 import LifeSaving from '../components/LifeSaving'
 import Footer from '../components/Footer'
+import { useEffect } from 'react'
 
 const ServiceDetail = () => {
   const { uuid } = useParams()
+
+  useEffect(() => {
+    document.title =
+      'Atlantic Global Maritim - One Stop Solution for Ship Safety | Services'
+  }, [])
 
   return (
     <>

@@ -15,7 +15,7 @@ const Header = () => {
     <div className='py-4'>
       <Navbar fluid={true} rounded={true}>
         <Navbar.Brand href='/'>
-          <img src={Logo} alt='logo' className='md:w-52 sm:w-40 w-full' />
+          <img src={Logo} alt='logo' className='md:w-52 sm:w-40 w-36' />
         </Navbar.Brand>
         <div className='flex md:order-2'>
           <Dropdown

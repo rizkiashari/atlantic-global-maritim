@@ -12,7 +12,8 @@ const Home = () => {
   const lang = localStorage.getItem('lang')
 
   useEffect(() => {
-    document.title = 'Atlantic Global Maritim | Home'
+    document.title =
+      'Atlantic Global Maritim - One Stop Solution for Ship Safety | Home'
   }, [])
 
   return (
@@ -25,7 +26,7 @@ const Home = () => {
               ? 'Solusi Satu Atap untuk Keselamatan Kapal'
               : 'One-stop Solution for Ship Safety'}
           </p>
-          <h1 className='font-semibold text-base  md:text-2xl lg:text-4xl 2xl:text-5xl md:mt-6 my-3 md:mb-12 max-w-2xl w-full leading-normal'>
+          <h1 className='font-semibold text-lg md:text-2xl lg:text-4xl 2xl:text-5xl md:mt-6 my-3 md:mb-12 max-w-2xl w-full leading-normal'>
             {lang === 'id'
               ? 'Kami Adalah Perusahaan Kelautan Profesional di Indonesia'
               : 'We Are Professional Marine Company in Indonesia'}
