@@ -29,7 +29,7 @@ const Footer = () => {
                 alt='email icon'
                 className='mr-3 md:w-8 md:h-8 w-6 h-6'
               />
-              Atlantic.global.maritim@gmail.com
+              info@atlanticglobalmaritim.com
             </p>
             <p className='inline-flex items-center text-xs md:text-base'>
               <img

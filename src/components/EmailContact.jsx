@@ -20,7 +20,7 @@ const EmailContact = () => {
 
     const { email, fullname, company, services, message } = valueEmail
 
-    window.location.href = `mailto:atlantic.global.maritim@gmail.com?subject=${services}&body=Hi, I'm ${fullname}|${email}%0DFrom ${company}%0D${message}`
+    window.location.href = `mailto:info@atlanticglobalmaritim.com?subject=${services}&body=Hi, I'm ${fullname}|${email}%0DFrom ${company}%0D${message}`
   }
 
   return (
@@ -55,16 +55,28 @@ const EmailContact = () => {
               alt='ig icon'
               className='md:w-16 md:h-16 h-10 w-10 bg-primary rounded-full p-2'
             />
-            <img
-              src={WaIcon}
-              alt='wa icon'
-              className='md:w-16 md:h-16 h-10 w-10 bg-primary rounded-full p-2'
-            />
-            <img
-              src={GmailIcon}
-              alt='gmail icon'
-              className='md:w-16 md:h-16 h-10 w-10 bg-primary rounded-full p-2'
-            />
+            <a
+              rel='noreferrer'
+              target='_blank'
+              href='https://api.whatsapp.com/send?phone=6281376000256'
+            >
+              <img
+                src={WaIcon}
+                alt='wa icon'
+                className='md:w-16 md:h-16 h-10 w-10 bg-primary rounded-full p-2'
+              />
+            </a>
+            <a
+              rel='noreferrer'
+              target='_blank'
+              href='mailto:info@atlanticglobalmaritim.com'
+            >
+              <img
+                src={GmailIcon}
+                alt='gmail icon'
+                className='md:w-16 md:h-16 h-10 w-10 bg-primary rounded-full p-2'
+              />
+            </a>
             <img
               src={LinkedLncon}
               alt='linkedln icon'
